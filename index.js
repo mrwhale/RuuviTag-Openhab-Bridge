@@ -1,8 +1,8 @@
 var noble = require('noble');
-var attributes = require('./attribute');
-var config = require('./config');
+var attributes = require('./lib/attribute');
+var config = require('./lib/config');
 var mqtt = require('mqtt');
-var client  = mqtt.connect('mqtt://10.1.1.115', { username: 'harryphone', password: 'Aigh7lee' })
+var client  = mqtt.connect('mqtt://hostname.com', { username: 'username', password: 'password' })
 var connected = false;
 var inRange = {};
 var packetsReceived = 0;
