@@ -1,0 +1,12 @@
+[Unit]
+Description=Ruuvi-Scanner
+
+[Service]
+ExecStart=/usr/bin/node index.js
+Restart=always
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/ruuvi
+
+[Install]
+WantedBy=multi-user.target
